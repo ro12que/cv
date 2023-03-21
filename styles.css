@@ -1,0 +1,309 @@
+/*    INICIO    */
+
+.inicio {
+    background: linear-gradient(rgb(0,0,0,.3), rgb(0,0,0.3)), 
+    url(img/FondoCodigo.jpg);
+    color: aliceblue;
+    background-size: cover;
+    background-repeat: none;
+    height: 600px;
+}
+
+.inicioContenedor {
+    text-align: center;
+}
+
+/* BARRA DE NAVEGACION */
+
+.nav { /* barra desplegable */
+    position: fixed;
+    background-color: rgb(32, 32, 32);
+    padding: 15px;
+    text-align: left;
+    border-radius: 10px;
+    margin-left: 50px;
+    display: none;
+}
+
+.nav a { /* items de la barra */
+    display: block;
+    color: aliceblue;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.nav-bar { /* icono clickeable para desplegar */
+    margin: 15px;
+    position: fixed;
+    background-color: rgb(0,0,0);
+    border-radius: 50px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    border: 2px solid lightgreen;
+}
+
+#nav-barimg { /* svg de barritas */
+    margin-top: 4px;
+    height: 30px;
+    width: 30px;
+}
+
+/*CONTENIDO DEL INICIO*/
+
+.logoimg {
+    height: 70px;
+    margin-top: 20px;
+}
+
+/*TITULO*/
+
+.titulo {
+    padding-bottom: 110px;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bolder;
+    margin-bottom: 0px;
+}
+
+.titulo h2 {
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.redes a { /*iconos redes*/
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: black;
+    border-radius: 100px;
+    padding: 15px;
+    border: lightgreen solid 2px;
+    display: inline-block;
+}
+
+.fotoPortada img {
+    height: 250px;
+    border-radius: 50%;
+    border: solid lightgreen 2px;
+    position: relative;
+
+}
+
+/*    SECCION SOBRE MI    */
+
+/*titulo*/
+.sobremi{
+    background-color: rgb(211, 211, 211, 0.5);
+}
+
+.SMcontenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tituloSM {
+    padding-top: 80px;
+    font-size: 80px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: lightgreen;
+}
+
+.SMcontenedor h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 70px;
+}
+
+.SMtexto {
+    font-size: 25px;
+    margin-top: 0px;
+    max-width: 400px;
+    text-align: justify;
+}
+
+@media (min-width: 320px) {
+    .tituloSM {
+        padding-top: 200px;
+    }
+}
+
+@media (min-width: 404px) {
+    .tituloSM {
+        padding-top: 170px;
+    }
+}
+
+/*columnas*/
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.col1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col1 h2 {
+    font-size: 50px;
+    text-decoration: underline lightgreen;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}  
+
+.col1 p {
+    max-width: 300px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+/*columna 2*/
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col2 h2 {
+    font-size: 50px;
+    text-decoration: underline lightgreen;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}  
+
+.col2 p {
+    max-width: 300px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+/*columna 3*/
+
+.col3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.col3 h2 {
+    font-size: 50px;
+    text-decoration: underline lightgreen;
+    margin-bottom: 10px;
+    margin-top: 0px; 
+
+}  
+
+.col3 p {
+    max-width: 300px;
+    font-size: 30px;
+    text-align: justify;
+}
+
+/*decoraciones*/
+
+.Decoracion {
+    height: 50px;
+    padding: 10px;
+    border: lightgreen 2px solid;
+    border-radius: 100px;
+    margin-bottom: 0px;
+}
+
+@media (min-width: 960px) {
+    .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col1 p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    
+    .col2 p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .col3 p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/*SECCION HABILIDADES*/
+
+.habilidades {
+    background: linear-gradient(rgb(0,0,0,.3), rgb(0,0,0.3)), 
+    url(img/FondoHabilidades.webp);
+    background-size: cover;
+    background-repeat: none;
+    height: 1350px;
+    margin-top: 0px;
+}
+
+.tituloHabilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    padding-top: 5px;
+    padding-bottom: 0;
+}
+
+.tituloHabilidades h2 {
+    font-size: 80px;
+}
+
+.tituloHabilidades h3 {
+    font-size: 60px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+/*columnas habilidades*/
+
+.tegnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(211, 211, 211, 0.5);
+}
+
+.tegnoTitulo {
+    font-size: 35px;
+    margin: 5px;
+    color: lightgreen;
+}
+
+.tegnoTexto {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    max-width: 300px;
+}
+
+.bootstrap h3 {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.jS {
+
+}
